@@ -3,12 +3,12 @@
     
 }
 
-
 :root {
   --primary-color: #1F2937;
   --dark-bg: #1f2937;
   --light-bg: #e5e7eb;
   --text-color: #f9faf8;
+  --text-grey: #1F2937;
   --secondary-text: #e5e7eb;
   --accent: #3882F6;
   
@@ -26,7 +26,6 @@ body {
 .d-flex {
     display: var(--d-flex);
 }
-
 
 .container {
     max-width: 1200px;
@@ -80,6 +79,10 @@ header, .hero-sec {
 
 /***HERO***/
 
+.hero-sec .container {
+    padding: 80px 20px;
+}
+
 
 .hero-sec h1 {
     font-size: 48px;
@@ -107,4 +110,117 @@ header, .hero-sec {
 .hero-sec .d-flex {
     gap: 80px;
     align-items: center;
+}
+
+
+/***Services Cards***/
+
+.services-sec .d-flex {
+    flex-flow: column;
+    align-items: center;
+    gap: 30px;
+   
+}
+
+.services-sec .container {
+     padding: 40px 20px;
+}
+.cards img {
+    width: 100%;
+    border: 2px solid var(--accent);
+    border-radius:10px;
+    height: 250px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.cards-wrap.d-flex {
+    flex-flow: row;
+    gap: 50px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    text-align: center;
+}
+
+
+h2 {
+ font-size: 30px;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+/***Quote Sec***/
+
+.quote-sec {
+    background-color: var(--secondary-text);
+}
+
+.quote-sec p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color:var(--text-grey)
+}
+
+.quote-sec .container {
+    max-width: 1000px;
+    padding: 40px 20px;
+   
+}
+
+.quote-sec h5 {
+    text-align: right;
+    font-size: 24px;
+}
+
+.col {
+    flex-basis: 200px;
+}
+
+
+/***CTA Sec***/
+
+.cta-wrap {
+    background-color: var(--accent);
+    padding: 40px 80px;
+    justify-content: space-between;
+    place-items:center center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cta-wrap h3 ,.cta-wrap p {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.cta-wrap .button {
+    border: 2px solid var(--text-color);
+   
+}
+
+.cta-sec .container {
+    padding: 80px 20px;
+    
+}
+
+/***Footer***/
+.footer-sec {
+    background-color: var(--primary-color);
+}
+
+.footer-sec .container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-sec p {
+    color: var(--text-color);
 }
